@@ -1,0 +1,127 @@
+.header{
+    height: 100px;
+    position:relative;
+}
+.container-logo h1{
+    display: none;
+}
+.container-logo{
+    width: 56px;
+    height: 56px;
+    background: url("../image/logo.png");
+    background-size: 100% 100%;
+    margin-top: 22px;
+    margin-right: 172px;
+}
+.header-menu>a{
+    height: 100px;
+    font-size: 16px;
+    padding: 0 10px;
+    text-align: center;
+    line-height: 100px;
+    
+}
+.header_secmenu{
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    padding:30px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    z-index:20;
+    background: #fff;
+}
+.header_secmenu a{
+    width: 204px;
+    
+    text-align: center;
+    font-size: 12px;
+}
+
+.header_cover img{
+    width: 160px;
+    height: 110px;
+    border-right: 1px solid #eee;
+}
+.header_secmenu a:last-child .header_cover img{
+    border-right: none;
+}
+.header_name{
+    margin-top: 10px;
+    color: #333;
+}
+.header_price{
+    color: #ff6700;
+}
+.header-menu:hover .header_secmenu{
+    display: block;
+}
+.header_search{
+    margin-top: 25px;
+    position: relative;
+}
+.header_search input{
+    width: 245px;
+    height: 50px;
+    
+    padding:0 15px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.header_search button{
+    width: 55px;
+    height: 50px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-left: none;
+    color: #777;
+    
+}
+.header_search i{
+    font-size: 20px;
+    
+}
+.header_suggest{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: block;
+    width: 245px;
+    border:1px solid #ff6700;
+    border-top:none;
+    z-index:60;
+    background: #fff;
+    display: none;
+}
+.header_suggest a{
+    display: block;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+    padding: 0 12px;
+    
+}
+.header_suggest a:hover{
+    background: #eee;
+    color: inherit;
+}
+.header_search input:focus~div{
+    display: block;
+}
+.header_search input:hover{
+    border-color: #aaa;
+}
+.header_search input:focus{
+    border-color: #ff6700;
+}
+.header_search input:focus~button{
+    border-color: #ff6700;
+}
+.header_search button:hover{
+    background: #ff6700;
+    color: #fff;
+    border-color: #ff6700;
+}

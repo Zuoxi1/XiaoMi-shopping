@@ -1,0 +1,102 @@
+.banner{
+    height: 460px;
+    position: relative;
+}
+.banner_cover img{
+    width: 100%;
+    height: 100%;
+}
+.banner_pointer{
+    color: #b8c3cb;
+    width: 40px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    cursor: pointer;
+}
+.banner_pointer i{
+    font-size: 30px;
+}
+.banner_pointer_left{
+    left: 234px;
+
+}
+.banner_pointer_right{
+    right: 0;
+}
+.banner_pointer:hover{
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+}
+.banner_dots{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
+}
+.banner_dots span{
+    width: 10px;
+    height: 10px;
+    background: rgba(0,0,0,0.4);
+    border:2px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    margin:0 4px
+}
+.banner_dots span.banner_dots_selected{
+    border-color: rgba(0,0,0,0.4);
+    background: rgba(255,255,255,0.3);
+}
+.banner-menu{
+    width: 234px;
+    height: 100%;
+    padding: 20px 0;
+    background: rgba(105, 101, 101, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.banner-menu-item{
+    height: 42px;
+    padding-left: 30px;
+    padding-right: 20px;
+    line-height: 42px;
+    color: #fff;
+    cursor: pointer;
+}
+.banner-sub-menu{
+    position: absolute;
+    left: 234px;
+    width: 992px;
+    height: 100%;
+    top: 0;
+    background: #fff;
+    border: 1px solid #eee;
+    display: none;
+}
+.banner-sub-menu a{
+    width: 25%;
+    height: 16.666%;
+    padding: 0 20px;
+}
+.banner-sub-menu a img{
+    width: 40px;
+    height: 40px;
+    margin-top: 17px;
+    margin-right: 12px;
+}
+.banner-sub-menu a span{
+    width: 154px;
+    margin-top: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.banner-menu li:hover .banner-menu-item{
+    background-color: #ff6300;
+}
+.banner-menu li:hover .banner-sub-menu{
+    display: block;
+}
